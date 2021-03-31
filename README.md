@@ -5,13 +5,13 @@ Copy repository code. Run
 yarn install
 ```
 
-# Development
+## Development
 To start development mode run 
 ```
 yarn dev
 ```
 
-# Production
+## Production
 You need to build project first with
 ```
 yarn build
