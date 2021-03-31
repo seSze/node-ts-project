@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "app",
+      "script": "./dist/index.js",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "ignore_watch": ["node_modules"]
+    }
+  ]
+}

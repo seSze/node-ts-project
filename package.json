@@ -1,0 +1,30 @@
+{
+  "name": "ts-project",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "dist",
+  "engines": {
+    "node": ">=14.x"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "start": "pm2 start ecosystem.json $PM2_ARGS",
+    "dev": "nodemon",
+    "dev:queue": "node -r ts-node/register app/worker.ts",
+    "debug": "@dev --inspect-brk",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.16",
+    "@typescript-eslint/eslint-plugin": "^4.11.1",
+    "@typescript-eslint/parser": "^4.11.1",
+    "eslint": "^7.16.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.1.3"
+  }
+}

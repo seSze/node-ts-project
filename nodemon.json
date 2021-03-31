@@ -1,0 +1,11 @@
+{
+    "restartable": "rs",
+    "ignore": [".git", "node_modules/", "dist/", "coverage/", "tests/"],
+    "watch": ["src/"],
+    "exec": "node -r ts-node/register src/",
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "ext": "js,json,ts",
+    "inspect": true
+}
