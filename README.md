@@ -20,4 +20,4 @@ yarn build
 and next start the compiled code with
 ```
 yarn start
-``
+```
